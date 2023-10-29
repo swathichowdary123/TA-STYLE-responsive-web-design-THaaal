@@ -117,6 +117,9 @@ h2{
 .blog-section{
     padding:20px;
 }
+.width-full{
+    width:100%;
+}
 .footer{
     background-color: navy;
     color:white;
@@ -126,11 +129,38 @@ h2{
     color:white;
     margin-left: 20px;
 }
-@media all and (min-width:768px) and (max-width:768px){
-    .flex{
+@media screen and (max-width:768px){
+    html{
+        font-size: 10px;
+    }
+    .flex-100{
+        flex:0 1 100%;
+        margin:32px 0;
+    }
+    .wrap{
         flex-wrap: wrap;
     }
-    .section-width{
-        width:100%;
+    .order-1{
+        order:1;
+    }
+    .column{
+        flex-direction: column;
+    }
+    li{
+        margin:0 30px;
+    }
+    .header{
+        padding:20px 0;
+    }
+    .logo{
+        margin-bottom: 2rem;
+    }
+    .footer a{
+        margin:2rem 1.5rem 0 1.5rem;
+        display:inline-block;
+        font-size: 20px;
+    }
+    .footer small{
+        font-size: 16px;
     }
 }
