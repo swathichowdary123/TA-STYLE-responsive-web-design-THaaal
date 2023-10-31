@@ -1,0 +1,321 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* custom styles */
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1200px;
+    width:100%;
+    margin:0 auto;
+    padding:32px 0;
+}
+.flex{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-start{
+    align-items: flex-start;
+}
+/* header */
+.header{
+    background: url(assets/banner.png);
+    background-size: cover;
+    background-color: rgb(24, 24, 159), rgb(78, 30, 124);
+    padding:20px 0;
+}
+.nav a{
+   color:white;
+   font-size: 18px;
+   margin-left: 30px;
+   text-decoration: none;
+   text-transform: uppercase;
+}
+.logo{
+    color:white;
+   font-size: 26px;
+   text-decoration: none;
+   text-transform: uppercase;
+   font-weight: 700;
+}
+.header-box{
+    background-color: crimson;
+    width:40px;
+    height:40px;
+    padding:10px 10px;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 14px;
+    border-radius: 2px;
+    color:white;
+    text-decoration: none;
+}
+.hero{
+    padding:30px 0;
+}
+.flex-48{
+    width:45%;
+}
+.heading-one{
+    font-size: 48px;
+    color:white;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+.heading-one strong{
+    color:crimson;
+}
+.text{
+   color:white;
+   line-height: 1.5;
+   font-size: 16px;
+   margin-bottom: 30px;
+}
+.register-box{
+    color:white;
+    text-decoration: none;
+    text-align: center;
+    width:60px;
+    height:40px;
+    padding:10px 10px;
+    background-color: crimson;
+    border-radius: 2px;
+}
+/* about-section */
+.about-section{
+    padding:30px 0;
+}
+.heading-two{
+    font-size: 32px;
+    color:black;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.about-text{
+    font-size: 16px;
+    color:gray;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+.flex-46{
+   width:48%; 
+}
+/* join-section */
+.join-section{
+    padding:20px 0;
+    background-color: rgb(144, 168, 189);
+}
+.center{
+    text-align: center;
+}
+.flex-28{
+    width:28%;
+}
+.join-border{
+    border:2px dashed crimson;
+    padding:20px 20px;
+}
+.heading-three{
+    font-size: 26px;
+    color:black;
+    margin: 20px 0;
+}
+.text-color{
+    color:rgb(86, 81, 81);
+}
+/* schedule section */
+.schedule-section{
+    padding:30px 0;
+}
+.schedule-round{
+    width:90px;
+    height:90px;
+    border-radius: 50%;
+    background-color: crimson;
+    color:white;
+    font-size: 30px;
+    text-align: center;
+    vertical-align: middle;  
+    padding:8px 8px; 
+}
+.flex-25{
+    width:25%;
+    margin:0 80px;
+}
+.flex-30{
+    width:200px;
+    height:100px;
+    border-radius: 4px;
+    margin-right: 40px;
+}
+.flex-40{
+    width:700px;
+}
+.heading-four{
+    color:black;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+.dotted{
+    border:2px dashed crimson;
+    color:crimson; 
+    width:90px;
+    height:90px;
+    border-radius: 50%;
+    font-size: 30px;
+    text-align: center;
+    vertical-align: middle;  
+    padding:8px 8px; 
+}
+.margin{
+    margin:30px 0;
+}
+.flex-200:hover{
+    width:30%;
+    background-color: crimson;
+    width:200px;
+    height:200px;
+    text-align: center;
+    vertical-align: middle;
+    color:white;
+    border-radius: 4px;
+    padding:40px;
+}
+.p-20{
+    font-size: 24px;
+    font-weight: 700;
+    margin:20px 0;
+}
+.p-text{
+    font-size: 18px;
+}
+.section{
+    background-color: rgb(144, 168, 189); 
+    padding:20px 20px;
+}
+.fixed{
+    background-color: crimson;
+    width:200px;
+    height:200px;
+    text-align: center;
+    vertical-align: middle;
+    color:white;
+    border-radius: 4px;
+    padding:40px;
+}
+.video-section{
+    padding:30px 0;
+}
+.news{
+    color:navy;
+    font-size: 16px;
+}
+.width-full{
+    width:100%;
+}
+.flex-width{
+    width:30%;
+}
+.news-section{
+    background-color: rgb(144, 168, 189);
+    padding:20px 0;
+}
+.news-color{
+    color:crimson;
+}
+.footer{
+    background-color: rgb(14, 14, 88);
+    padding:20px;
+}
+.heading-five{
+    color:white;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+a{
+    color: white;
+    text-decoration: none;
+    margin-right: 30px;
+    color:grey;
+}
+.footer-icon {
+    color:white;
+    margin-left: 30px;
+}
+small{
+    color:grey;
+}
+.footer-color{
+    background-color:rgb(5, 5, 49);
+    padding:16px 0;
+}
+@media screen and (max-width:768px){
+    html{
+        font-size: 10px;
+    }
+    .flex-100{
+        flex:0 1 100%;
+        margin:32px 0;
+    }
+    .wrap{
+        flex-wrap: wrap;
+    }
+    .column{
+        flex-direction: column;
+    }
+    .padding{
+        padding:20px 20px;
+    }
+}
